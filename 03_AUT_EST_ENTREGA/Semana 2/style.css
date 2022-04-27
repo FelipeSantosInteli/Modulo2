@@ -1,0 +1,93 @@
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+h4 {
+    border-radius: 10px;
+    background-color: rgb(234, 252, 252) ;
+    color: #3498db;
+    overflow-y: hidden;
+}
+
+h5 {
+    overflow-y: hidden;
+}
+
+h6 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+    color: grey;
+    overflow-y: hidden;
+}
+
+
+
+.texto {
+    text-indent: 2em;
+    text-align: justify;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.form {
+    text-indent: 2em;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.datas {
+    text-indent: 2em;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    color: slategrey;
+}
+
+.lista {
+    text-indent: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    border-radius: 30px;
+    background-color: white;
+}
+
+.fundo {
+    background-color: rgb(227, 227, 227);
+}
+ .nome {
+     border-radius: 10px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+.foto {
+    border-radius: 20px;
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+
+ }
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+ }
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+ }
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+ }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+
+ }
