@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div.flex-container {
+    margin: 10%;
+    justify-content: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
