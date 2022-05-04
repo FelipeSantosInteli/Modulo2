@@ -2,7 +2,7 @@ const btn = document.querySelector("#send");
 
 function calcMaxH(v) {
     console.log("Valor recebido de v0: "+v)
-    var h = Math.pow(v, 2)/19.6
+    var h = Math.pow(v, 2)/20
     return(h)
 };
 
