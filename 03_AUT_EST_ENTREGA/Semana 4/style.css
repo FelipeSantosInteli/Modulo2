@@ -107,7 +107,7 @@ h6 {
 
 .foto {
     padding: 0%;
-    border-radius: 100%    ;
+    border-radius: 50%    ;
 }
 
 header {
@@ -127,8 +127,38 @@ header nav {
     padding: 0px 50px 0px 50px;
 }
 
+footer {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .row {
     text-align: center;
+}
+
+button {
+    transition: transform 0.3s ease;
+}
+
+.btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: inherit;
+    width: 20vw;
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px #ebebeb;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translate(0, -7px);
+}
+
+.btn:active {
+    color: aliceblue;
+    background: #addeff;
 }
 
 
@@ -169,7 +199,7 @@ header nav {
     }
 
     .container {    
-        width: 40%;
+        width: 70%;
     }
 
     nav.stickyNAV {
@@ -190,6 +220,9 @@ header nav {
  @media (max-width: 900px) {
 
     header nav {
+        display: flex;
+        justify-content: space-around;
+        height: 110px;
         transition: all 0.3s ease;
     }
 
@@ -223,12 +256,7 @@ header nav {
         position: absolute;
         left: 80px;
         top: 30px;
-        height: 150px;
-        transition: all 0.3s ease;
-    }
-
-    nav.stickyNAV {
-        height: 110px;
+        height: 140px;
         transition: all 0.3s ease;
     }
 
@@ -237,10 +265,27 @@ header nav {
         height: 100px;
     }
 
+    .btn {
+        width: 50%;
+    }
+
  }
 
  @media (max-width: 574px) {
+
     section.py-4 {
         display: none;
     }
+
+    header nav .foto {
+        left: 36%;
+        height: 120px;
+        text-align: center;
+    }
+
+    header nav .sticky {
+        left: 37%;
+        height: 100px;
+    }
+    
  }
