@@ -88,7 +88,7 @@ function preco() {
     };
 
     if (preco == 0) {
-        alert(nota100 + " nota(s) de 100, " + nota50 + " nota(s) de 50, " (s)+ nota20 + " nota(s) de 20, " + nota10 + " nota(s) de 10, " + nota5 + " nota(s) de 5, " + nota2 + " nota(s) de 2 e " + nota1 + " nota(s) de 1.");
+        alert(nota100 + " nota(s) de 100, " + nota50 + " nota(s) de 50, " + nota20 + " nota(s) de 20, " + nota10 + " nota(s) de 10, " + nota5 + " nota(s) de 5, " + nota2 + " nota(s) de 2 e " + nota1 + " nota(s) de 1.");
     };
 
 };

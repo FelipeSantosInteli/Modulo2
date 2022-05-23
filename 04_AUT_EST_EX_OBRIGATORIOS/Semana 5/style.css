@@ -19,7 +19,20 @@
         border-radius: 20px;
         padding: 10px;
         box-shadow:5px 10px 30px rgb(194, 194, 194);
+        transition: all 0.3s ease;
     }
+
+    button:hover {
+        transform: translateY(-4px);
+    }
+
+    button:active {
+        border: 0;
+        margin: 0;
+        outline: 0;
+        width: 15vw;
+    }
+    
 
     input {
         width: 17vw;
@@ -29,6 +42,11 @@
         border-radius: 10px;
         margin: 5px;
         height: 40px;
+        transition: transform 0.3s ease;
+    }
+
+    input:hover {
+        transform: translateY(-4px);
     }
 
     .small {
@@ -55,6 +73,11 @@
         padding: 30px;
         border-radius: 20px;
         box-shadow:5px 10px 30px rgb(194, 194, 194);
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-4px);
     }
 
     .row {
