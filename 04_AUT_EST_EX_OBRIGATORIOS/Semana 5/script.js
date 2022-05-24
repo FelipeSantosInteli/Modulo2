@@ -96,16 +96,14 @@ function preco() {
 function ordenar() {
     var list = []
 
-    var numFocus = document.getElementById("numFocus").value
+    let numFocus = String(document.getElementById("numFocus").value)
 
-    var str = document.getElementById("list").value;
+    var str = String(document.getElementById("list").value);
 
-    list = str.split(',').map(Number);
+    list = str.split(',');
 
-    var focus = numFocus.split('"').map(Number);
+    list.sort((a,b) => a - b);
 
-    let numbers = [list.sort((a,b) => a - b)];
-
-    alert(numbers + " ; o seu número em destaque " + "(" + focus + ")" + " está na posição " + numbers.indexOf(focus[0]) + " da lista.");
+    alert(list + " ; o seu número em destaque " + "(" + numFocus + ")" + " está na posição " + (list.indexOf(numFocus) + 1) + " da lista.");
 
 };
