@@ -1,14 +1,14 @@
 function qnttUp(a, b) {
     var input = b.previousElementSibling;
-    var value = parseInt(input.value, 10);
+    var value = parseInt(input.value);
     value = isNaN(value) ? 0 : value;
     value++;
     input.value = value;
-  }
+}
   
 function qnttDown(a, b) {
     var input = b.nextElementSibling;
-    var value = parseInt(input.value, 10);
+    var value = parseInt(input.value);
     if (value > 0) {
       value = isNaN(value) ?    0 : value;
       value--;
@@ -17,11 +17,11 @@ function qnttDown(a, b) {
 }
 
 function swapValues() {
-    var vl1 = String(document.getElementById('value1').value)
-    var vl2 = String(document.getElementById('value2').value)
+    var vl1 = String(document.getElementById('value1').value);
+    var vl2 = String(document.getElementById('value2').value);
 
-    document.getElementById('value1').value = vl2
-    document.getElementById('value2').value = vl1
+    document.getElementById('value1').value = vl2;
+    document.getElementById('value2').value = vl1;
 }
 
 function verifyNmbr() {
@@ -35,6 +35,4 @@ function verifyNmbr() {
     if (re.test(phoneNmbr) == false) {
         alert("Formato de número inválido")
     }
-
-    console.log(re.test(phoneNmbr))
 }
