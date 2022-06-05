@@ -1,0 +1,291 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+h2.NOME {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: rgb(70, 70, 70);
+}
+
+h4 {
+    border-radius: 10px;
+    background-color: rgb(234, 252, 252) ;
+    color: #3498db;
+    overflow-y: hidden;
+}
+
+h5 {
+    overflow-y: hidden;
+}
+
+h6 {
+    padding: 0%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+    color: grey;
+    overflow-y: hidden;
+}
+
+* {
+    padding: 70px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding: 0;
+    margin: 0;
+}
+.bg {
+    padding: 0%;
+}
+
+
+.barra {
+    background-attachment: fixed;
+    padding: 0%;
+    z-index: -1;
+    background-color: blue;
+    height: 100px;
+    bottom: 70px;
+}
+.corpo {
+    z-index: 1;
+}
+.texto {
+    text-indent: 2em;
+    text-align: justify;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.form {
+    text-indent: 2em;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.datas {
+    text-indent: 2em;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    color: slategrey;
+}
+
+.lista {
+    text-indent: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container2 {
+    z-index: 1;
+}
+.container {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    z-index: 1;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.fundo {
+    background-image: linear-gradient(to top, rgb(227, 227, 227) 30%, blue);
+    background-attachment: fixed;
+    padding: 0%;
+    background-color: rgb(227, 227, 227);
+}
+
+.nome {
+     border-radius: 10px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+.foto {
+    padding: 0%;
+    border-radius: 50%    ;
+}
+
+header {
+    z-index: 2;
+    position: sticky;
+    top: 0;
+}
+
+header nav {
+    box-shadow: 0px 5px 10px #ebebeb;
+    height: 200px;
+    background: #F9F9F9;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 50px;
+}
+
+footer {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.row {
+    text-align: center;
+}
+
+button {
+    transition: transform 0.3s ease;
+}
+
+.btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: inherit;
+    width: 20vw;
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px #ebebeb;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translate(0, -7px);
+}
+
+.btn:active {
+    color: aliceblue;
+    background: #addeff;
+}
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+/* @media (max-width: 575.98px) { 
+    .barra {
+        height: 0%;
+    }
+    .fundo {
+        padding: 0%;
+    }
+    .container {
+        border-radius: 0%;
+    }
+    .container2 {
+        background-color: white;
+    }
+    .nome {
+        padding: 0%;
+    }
+
+ } */
+
+
+
+
+ @media (min-width: 900px) {
+    header nav {
+        transition: all 0.3s ease;
+    }
+
+    header nav .foto {
+        position: absolute;
+        left: 80px;
+        top: 30px;
+        height: 150px;
+        transition: all 0.3s ease;
+    }
+
+    .container {    
+        width: 70%;
+    }
+
+    nav.stickyNAV {
+        height: 110px;
+        transition: all 0.3s ease;
+    }
+
+    header nav .sticky {
+        top: 5px;
+        height: 100px;
+    }
+
+    .nome {
+        display: none;
+    }
+ }
+
+ @media (max-width: 900px) {
+
+    header nav {
+        display: flex;
+        justify-content: space-around;
+        height: 110px;
+        transition: all 0.3s ease;
+    }
+
+    .fundo {
+        padding: 0%;
+    }
+    .nome {
+        padding: 0%;
+    }
+    .barra {
+        height: 0%;
+    }
+    .fundo {
+        padding: 0%;
+    }
+    .container {
+        border-radius: 0%;
+    }
+    .container2 {
+        background-color: white;
+    }
+    .nome {
+        padding: 0%;
+    }
+
+    h2.NOME {
+        display: none;
+    }
+
+    header nav .foto {
+        position: absolute;
+        left: 80px;
+        top: 30px;
+        height: 140px;
+        transition: all 0.3s ease;
+    }
+
+    header nav .sticky {
+        top: 5px;
+        height: 100px;
+    }
+
+    .btn {
+        width: 50%;
+    }
+
+ }
+
+ @media (max-width: 574px) {
+
+    section.py-4 {
+        display: none;
+    }
+
+    header nav .foto {
+        left: 36%;
+        height: 120px;
+        text-align: center;
+    }
+
+    header nav .sticky {
+        left: 37%;
+        height: 100px;
+    }
+    
+ }

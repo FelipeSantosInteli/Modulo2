@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/1fddcbf50b.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="card">
+        <h2>Quantidade do produto</h2>
+        <br>
+        <div  class="row column">
+            <div class="row">
+                <button class="btn2 menos" onClick="qnttDown(event, this)"><i class="fa-solid fa-angle-down"></i></button>
+                <input class="small valueQnt" name="Qnt" type="text" placeholder="Qunatidade" value="0">
+                <button class="btn2 mais" onClick="qnttUp(event, this)"><i class="fa-solid fa-angle-up"></i></button>
+            </div>       
+        </div>
+    </div>
+    <div class="card">
+        <h2>Troca de valores</h2>
+        <br>
+        <div class="center">
+            <div class="row">
+                <input class="medium center" type="text" id="value1" placeholder="Palavra/Número">
+                <button onclick="swapValues()" class="btn2"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+                
+                <input class="medium center" type="text" id="value2" placeholder="Palavra/Número">
+            </div>
+            <br>
+            
+        </div>
+    </div>
+    <div class="card">
+        <h2>Verificar formatação do número de telefone</h2>
+        <br>
+        <div class="center">
+            <h4>(XX)XXXXX-XXXX</h4>
+            <br>
+            <input class="large" type="text" id="phoneNmbr" placeholder="Número para contato">
+            <br>
+            <button onclick="verifyNmbr()">Enviar</button>
+        </div>
+    </div>
+</body>
+</html>
