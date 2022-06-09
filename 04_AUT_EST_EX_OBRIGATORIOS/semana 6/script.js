@@ -29,10 +29,33 @@ function verifyNmbr() {
     var re = /^[(]\d{2}[)](\s)?\d{5}(-|\s)\d{4}$/;
 
     if (re.test(phoneNmbr) == true) {
-        alert("Número enviado com sucesso")
-    }
+        alert("Número enviado com sucesso");
+    };
 
     if (re.test(phoneNmbr) == false) {
-        alert("Formato de número inválido")
+        alert("Formato de número inválido");
+    };
+};
+
+function valueOff() {
+    var input = document.getElementById("ppl");
+    var turn = document.getElementById("turn").value;
+    var ppl = parseInt(input.value);
+    var ticket;
+
+    if(turn == "Diurno") {
+        ticket = 200;
+        var discount = 0.6;
     }
-}
+
+    else if(turn == "Noturno") {
+        ticket = 100;
+        var discount = 0.8;
+    };
+
+    if (ppl > 50) {
+        var finalValue = ticket*discount;
+    };
+
+    alert("O valor da sua passagem será " + "R$" + finalValue + ",00");
+};
