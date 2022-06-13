@@ -138,6 +138,12 @@ footer {
     text-align: center;
 }
 
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 button {
     transition: transform 0.3s ease;
 }

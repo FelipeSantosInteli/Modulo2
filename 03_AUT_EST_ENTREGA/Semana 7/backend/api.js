@@ -16,12 +16,12 @@ app.use(express.json());
 /****** CRUD ******************************************************************/
 
 // Retorna todos registros (é o R do CRUD - Read)
-app.get('/users', (req, res) => {
+app.get('/users', urlencodedParser , (req, res) => {
   res.statusCode = 200;
   res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
 
   var db = new sqlite3.Database(DBPATH); // Abre o banco
-var sql = 'SELECT * FROM tbUser ORDER BY title COLLATE NOCASE';
+  var sql = 'SELECT * FROM tbUser';
   db.all(sql, [],  (err, rows ) => {
       if (err) {
           throw err;
