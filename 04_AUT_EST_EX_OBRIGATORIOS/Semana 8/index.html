@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/1fddcbf50b.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="card">
+        <h2>Verificar se a centena é par ou ímpar</h2>
+        <br>
+        <div class="center">
+            <h4>Escreva um número inteiro maior do que 100</h4>
+            <br>
+            <input class="large" type="text" id="centena" placeholder="Número">
+            <br>
+            <button id="centenaBtn" onclick="verifyCent()">Verificar</button>
+        </div>
+    </div>
+    <div class="card">
+        <h2>Somar todas as casas do número</h2>
+        <br>
+        <div class="center">
+            <h4>Escreva um número inteiro positivo</h4>
+            <br>
+            <input class="large" type="text" id="addNmbr" placeholder="Número">
+            <br>
+            <button onclick="addNmbr()">Calcular</button>
+        </div>
+    </div>
+    <div class="card">
+        <h2>Ordenar nomes por ordem alfabética</h2>
+        <br>
+        <div class="center">
+            <h4>Escreva nomes separados por vírgula</h4>
+            <br>
+            <input class="large" type="text" id="list" placeholder="Nomes">
+            <br>
+            <button onclick="ordNm()">Ordenar</button>
+        </div>
+    </div>
+    <div class="card">
+        <h2>Sequência de Fibonacci</h2>
+        <br>
+        <div class="center">
+            <h4>Escolha até qual termo quer que a sequencia vá</h4>
+            <br>
+            <input class="center" type="text" id="term" placeholder="Termo">
+            <br>
+            <button onclick="seqFib()">Fibonacci</button>
+        </div>
+    </div>
+    <div class="card">
+        <h2>Numeros primos no intervalo de dois valores</h2>
+        <br>
+        <div class="center">
+            <h4>Escreva dois N°s separados por vírgula para o intervalo</h4>
+            <br>
+            <input class="large" type="text" id="intervalo" placeholder="Números">
+            <br>
+            <button onclick="nmbrPrimos()">Primos</button>
+        </div>
+    </div>
+</body>
+</html>
